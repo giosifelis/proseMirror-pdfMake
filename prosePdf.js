@@ -74,7 +74,6 @@ const prosePdf = {
         data.content.map(function(c) {
 
           let marks = c.marks ? prosePdf.process.marks(c.marks) : false,
-            // processedText = prosePdf.contentType(c),
             contentResult = {
               text: prosePdf.process.contentType(c)
             };
