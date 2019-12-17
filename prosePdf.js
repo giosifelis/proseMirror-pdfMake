@@ -1,14 +1,11 @@
 const prosePdf = {
   process: {
     hardBreak: function(brLine) {
-
       return {
         text: '\n',
       };
-
     },
     hr: function(hrLine) {
-
       return [{
         canvas: [{
           type: 'line',
@@ -29,7 +26,6 @@ const prosePdf = {
         defaultFontSize = fontSize || 10;
 
       switch (hLine.attrs.level) {
-
         case 2: // h2
           fontMultiplier = 1.5; 
           break;
