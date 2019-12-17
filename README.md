@@ -4,6 +4,7 @@ parser for proseMirror to [pdfmake](https://www.pdfmake.org).  It formats the pr
 ### usage
 ```javascript
 // viewData is the data that comes from proseMirror
+// prosePdf.parser(data, defaultFontSize), defaultFontSize is optional and it defaults to 10
 
   var data = data.state.doc.toJSON();
   var pdfMakeJson = prosePdf.parser(data);
@@ -36,6 +37,7 @@ It takes all marks and creates a "style" for each.  In pdfmake you need to creat
 2. formated text with bold, italic, 
 3. links
 4. horizontal lines
+5. headings
 
 ### TODO: 
 1. parse tables
