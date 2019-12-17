@@ -34,7 +34,7 @@ It takes all marks and creates a "style" for each.  In pdfmake you need to creat
 
 ### current parser features
 1. plain text
-2. formated text with bold, italic, 
+2. formated text with bold, italic, underline, mark etc (for each mark that you have in proseMirror, have a style to go with it)
 3. links
 4. horizontal lines
 5. headings
