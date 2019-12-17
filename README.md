@@ -8,6 +8,9 @@ parser for proseMirror to [pdfmake](https://www.pdfmake.org).  It formats the pr
 
   var data = data.state.doc.toJSON();
   var pdfMakeJson = prosePdf.parser(data);
+  
+  // in pdfmake playground:  http://pdfmake.org/playground.html
+  var dd = { content: pdfMakeJson }
 ```
 ### how it works
 It takes all marks  and creates a "style" for each.  In pdfmake you need to create a styles object that corresponds to the marks in proseMirror ie: for bold, if you use <b></b> have a b: {bold:true}, if you use <strong></strong>, have b:{bold true} etc. See what options you have in [pdfmake decorations](https://pdfmake.github.io/docs/document-definition-object/styling/) and expand your styles object as needed.
