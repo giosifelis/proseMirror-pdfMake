@@ -6,6 +6,5 @@ parser for proseMirror to pdfMake
 // viewData is the data that comes from proseMirror
 
   var data = data.state.doc.toJSON();
-  
   var pdfMakeJson = prosePdf.parser(data);
 ```
